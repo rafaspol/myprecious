@@ -9,6 +9,7 @@ pom.xml
 .lein-failures
 .lein-plugins
 /checkouts
+.DS_Store
 
 
 
