@@ -1,12 +1,14 @@
 (ns myprecious.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World de Almeida 2!"))
+(defn soma [x]
+  (println "x = " x)
+  (let [n (count x)
+  		resultado (if (= 1 n)
+  					(first x)
+  					(+ (first x) (soma (rest x))))]
+    (println "resultado[" n "] = " resultado)
+    resultado))
 
-
-(defn soma [x y]
-  (let [res (+ x y)]
-    (println (str  res " eh a resposta"))
-    res))
+(defn media [x]
+  (let [n (count x)]
+    (/ (soma x) (double n))))
