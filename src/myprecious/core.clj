@@ -3,7 +3,7 @@
 (defn foo
   "I don't do a whole lot."
   [x]
-  (println x "Hello, World de Almeida!"))
+  (println x "Hello, World de Almeida 2!"))
 
 
 (defn soma [x y]
